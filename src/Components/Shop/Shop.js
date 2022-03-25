@@ -37,7 +37,7 @@ const Shop = () => {
             </div>
 
             {/* cart components */}
-            <Cart cart={cart}/>
+            <Cart cart={cart} setCart={setCart}/>
         </div>
     );
 };

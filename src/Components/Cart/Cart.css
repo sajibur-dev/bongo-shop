@@ -24,6 +24,8 @@
   background-color: lightgray;
   cursor: pointer;
   transition: 1s;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .cart-product-button:hover {
