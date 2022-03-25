@@ -1,9 +1,10 @@
 import React from 'react';
+import Shop from './Components/Shop/Shop';
 
 const App = () => {
   return (
     <div>
-      <h1>this is app component</h1>
+      <Shop/>
     </div>
   );
 };
