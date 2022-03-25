@@ -1,0 +1,11 @@
+.nav {
+  height: 100px;
+  background-color: gray;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+.company-name {
+  margin: 0;
+  text-transform: uppercase;
+}
