@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "picture": "../src/images/laptop.jpg",
+    "picture": "http://placehold.it/32x32",
     "price": 28455,
     "name": "DELL L24"
   },

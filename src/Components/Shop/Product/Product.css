@@ -1,0 +1,26 @@
+.product {
+  border: 1px solid gray;
+  width: 16rem;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product-button {
+  text-transform: uppercase;
+  color: blue;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.product-button:hover {
+  background-color: lightblue;
+}

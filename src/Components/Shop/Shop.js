@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Product from './Product/Product';
 import './Shop.css';
 
 const Shop = () => {
@@ -8,11 +9,26 @@ const Shop = () => {
         .then((res) => res.json())
         .then((data) => setProducts(data))
     },[])
+    const handleCartProduct = (product) => {
+        console.log(product);
+    }
     return (
-        <div>
+        <div className='shop-container'>
             {/* product components  */}
+            <div className="products-container">
+                {/* product */}
+                {
+                    products.map((product) => 
+                    <Product 
+                        key={product.id} 
+                        product={product}
+                        handleCartProduct={handleCartProduct}
+                    />)
+                }
+            </div>
 
             {/* cart components */}
+            
         </div>
     );
 };
