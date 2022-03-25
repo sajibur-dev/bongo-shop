@@ -4,14 +4,19 @@ import './Shop.css';
 
 const Shop = () => {
     const [products,setProducts] =  useState([]);
+    const [cart,setCart] = useState([]);
     useEffect(()=>{
         fetch('data.json')
         .then((res) => res.json())
         .then((data) => setProducts(data))
-    },[])
-    const handleCartProduct = (product) => {
-        console.log(product);
+    },[]);
+
+    const handleCartProduct = (selectedProduct) => {
+        const isProductExist = cart.find((product) => product.id === selectedProduct.id);
+        const newProduct = !isProductExist ? [...cart,selectedProduct] : [...cart];
+        setCart(newProduct);
     }
+
     return (
         <div className='shop-container'>
             {/* product components  */}
