@@ -16,16 +16,23 @@ const Cart = ({cart,setCart}) => {
             alert(chooseProduct)
         }
     }
+
+    const deleteSpecificProduct = (specificProduct) => {
+        const restProduct = cart.filter((product) => product.id !== specificProduct.id);
+        setCart(restProduct)
+    }
     return (
         <div className='cart'>
             <h3>Selected Product</h3>
             {
-                cart.map((product) =>  (
+                cart.map((product) => 
+                    (
                     
-                    <div className='cart-product'>
+                    <div key={product.id} className='cart-product'>
                         <img src={logo} width="50" alt="" />
                         <h5>{product.name}</h5>
-                        <button className='cart-product-button'><FontAwesomeIcon icon={faDeleteLeft}/></button>
+                        <button 
+                        onClick={() => deleteSpecificProduct(product)} className='cart-product-button'><FontAwesomeIcon icon={faDeleteLeft}/></button>
                     </div>
                 ))
             }
