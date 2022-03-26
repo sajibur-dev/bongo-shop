@@ -27,13 +27,13 @@ const Shop = () => {
     }
     return (
         <div>
-            {/* product components  */}
+            {/* product container*/}
             {
-                    message ? <Message message={message} messageTitle="over add product"/> : null
+                    message ? <Message message={message} messageTitle="extra add product"/> : null
             }
             <div  className='shop-container'>   
                 <div className="products-container">
-                    {/* product */}
+                    {/* product component */}
                     
                     {
                         products.map((product) => 

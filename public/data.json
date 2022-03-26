@@ -1,55 +1,55 @@
 [
   {
     "id": 1,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://i.ibb.co/xh9bz4x/laptop3.jpg",
     "price": 28455,
     "name": "DELL L24"
   },
   {
     "id": 2,
-    "picture": "../src/images/desktop.jpg",
+    "picture": "https://i.ibb.co/mFhpChm/desktop.jpg",
     "price": 82110,
     "name": "HP desktop"
   },
   {
     "id": 3,
-    "picture": "../src/images/monitor.jpg",
+    "picture": "https://i.ibb.co/VD4Z1c5/monitor.jpg",
     "price": 40589,
     "name": "Asus monitor"
   },
   {
     "id": 4,
-    "picture": "../src/images/smart-phone.jpg",
+    "picture": "https://i.ibb.co/Z1mPpFL/smart-phone.jpg",
     "price": 27097,
     "name": "Samsung S7"
   },
   {
     "id": 5,
-    "picture": "../src/images/smart-tv.jpg",
+    "picture": "https://i.ibb.co/7Ys07MW/smart-tv.jpg",
     "price": 32806,
-    "name": "Smart Phone"
+    "name": "Google TV"
   },
   {
     "id": 6,
-    "picture": "../src/images/tablet.jpg",
+    "picture": "https://i.ibb.co/vBBhQGd/tablet.jpg",
     "price": 43325,
     "name": "Apple tablet"
   },
   {
     "id": 7,
-    "picture": "../src/images/laptop2.jpg",
+    "picture": "https://i.ibb.co/rG0NLMH/laptop2.jpg",
     "price": 95396,
     "name": "HP laptop"
   },
   {
     "id": 8,
-    "picture": "../src/images/laptop3.jpg",
+    "picture": "https://i.ibb.co/xh9bz4x/laptop3.jpg",
     "price": 4728,
     "name": "Asus laptop"
   },
   {
     "id": 9,
-    "picture": "../src/images/laptop3.jpg",
+    "picture": "https://i.ibb.co/jwT3KBq/laptop3.jpg",
     "price": 4728,
     "name": "Lenovo laptop"
   }

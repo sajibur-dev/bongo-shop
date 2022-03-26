@@ -1,7 +1,6 @@
 import { faDeleteLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import logo from '../../images/laptop.jpg';
 import './Cart.css';
 
 const Cart = ({cart,setCart}) => {
@@ -19,8 +18,6 @@ const Cart = ({cart,setCart}) => {
             setMessage(chooseProduct)
         }
     }
-
-    console.log(message)
     const deleteSpecificProduct = (specificProduct) => {
         const restProduct = cart.filter((product) => product.id !== specificProduct.id);
         setCart(restProduct)
@@ -33,7 +30,7 @@ const Cart = ({cart,setCart}) => {
                     (
                     
                     <div key={product.id} className='cart-product my-3'>
-                        <img src={logo} width="50" alt="" />
+                        <img src={product.picture} width="50" alt="" />
                         <h5>{product.name}</h5>
                         <button 
                         onClick={() => deleteSpecificProduct(product)} className='cart-product-button'><FontAwesomeIcon icon={faDeleteLeft}/></button>
