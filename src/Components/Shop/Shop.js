@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Message from '../Message/Message';
 import Product from '../Product/Product';
 import './Shop.css';
 
 const Shop = () => {
     const [products,setProducts] =  useState([]);
     const [cart,setCart] = useState([]);
+    const [message,setMessage] = useState('')
     useEffect(()=>{
         fetch('data.json')
         .then((res) => res.json())
@@ -14,30 +16,37 @@ const Shop = () => {
 
     const handleCartProduct = (selectedProduct) => {
         if (cart.length >= 4) {
-            alert(`you can't add getter then 4`)
+            setMessage(`you can't add getter then 4`)
+            setCart([...cart]);
         } else {
             const isProductExist = cart.find((product) => product.id === selectedProduct.id);
             const newProduct = !isProductExist ? [...cart,selectedProduct] : [...cart];
-            setCart(newProduct);   
+            setCart(newProduct);
+            setMessage('')   
         }
     }
     return (
-        <div className='shop-container'>
+        <div>
             {/* product components  */}
-            <div className="products-container">
-                {/* product */}
-                {
-                    products.map((product) => 
-                    <Product 
-                        key={product.id} 
-                        product={product}
-                        handleCartProduct={handleCartProduct}
-                    />)
-                }
+            {
+                    message ? <Message message={message} messageTitle="over add product"/> : null
+            }
+            <div  className='shop-container'>   
+                <div className="products-container">
+                    {/* product */}
+                    
+                    {
+                        products.map((product) => 
+                        <Product 
+                            key={product.id} 
+                            product={product}
+                            handleCartProduct={handleCartProduct}
+                        />)
+                    }
+                </div>
+                {/* cart components */}
+                <Cart cart={cart} setCart={setCart}/>
             </div>
-
-            {/* cart components */}
-            <Cart cart={cart} setCart={setCart}/>
         </div>
     );
 };

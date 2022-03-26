@@ -14,6 +14,7 @@ const Product = ({product,handleCartProduct}) => {
             <h3>{name}</h3>
             <p>{price} tk</p>
             <button
+            data-bs-toggle="modal" data-bs-target="#exampleModal"
             onClick={ () => handleCartProduct(product)} 
             className='product-button'>Add To Cart <FontAwesomeIcon icon={faShoppingCart}/></button>
         </div>
