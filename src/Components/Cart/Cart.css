@@ -52,3 +52,32 @@
   border: 1px solid red;
   color: red;
 }
+
+/* #####     #####
+resposive design
+#####     ##### */
+
+@media (min-width: 1px) {
+  .btn {
+    padding: 12px 9px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 640px) {
+  .btn {
+    padding: 12px 9px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 12px 9px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    padding: 12px 9px;
+  }
+}

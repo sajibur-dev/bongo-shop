@@ -17,7 +17,7 @@ resposive design
 
 @media (min-width: 1px) {
   .shop-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .products-container {
     grid-template-columns: 1fr;
@@ -35,19 +35,20 @@ resposive design
 
 @media (min-width: 768px) {
   .shop-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .products-container {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 1024px) {
   .shop-container {
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 2fr;
   }
   .products-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
